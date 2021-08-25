@@ -30,7 +30,9 @@ class AuthService {
   }
 
   // sign in with email & password
-
+  Future signInemailpassword() async {
+    try {} catch (e) {}
+  }
   // register with email and password
 
   //sign out
