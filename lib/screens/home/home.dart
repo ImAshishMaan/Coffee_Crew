@@ -1,5 +1,8 @@
+import 'dart:ui';
+
 import 'package:firebase_login_flutter/models/brew.dart';
 import 'package:firebase_login_flutter/screens/home/brew_list.dart';
+import 'package:firebase_login_flutter/screens/home/settings_form.dart';
 import 'package:firebase_login_flutter/services/auth.dart';
 import 'package:firebase_login_flutter/services/database.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +18,7 @@ class Home extends StatelessWidget {
           builder: (context) {
             return Container(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
-              child: Text('bottom sheet'),
+              child: SettingsForm(),
             );
           });
     }
@@ -44,7 +47,15 @@ class Home extends StatelessWidget {
             )
           ],
         ),
-        body: BrewList(),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/coffee_bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: BrewList(),
+        ),
       ),
     );
   }
