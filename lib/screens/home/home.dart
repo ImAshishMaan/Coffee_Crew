@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:firebase_login_flutter/models/brew.dart';
 import 'package:firebase_login_flutter/screens/home/brew_list.dart';
 import 'package:firebase_login_flutter/screens/home/settings_form.dart';
@@ -14,22 +12,23 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     void _showSettingsPanel() {
       showModalBottomSheet(
-          context: context,
-          builder: (context) {
-            return Container(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
-              child: SettingsForm(),
-            );
-          });
+        context: context,
+        builder: (context) {
+          return Container(
+            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+            child: SettingsForm(),
+          );
+        },
+      );
     }
 
-    return StreamProvider<List<Brew>?>.value(
+    return StreamProvider<List<Coffee>?>.value(
       value: DatabaseService().brews,
       initialData: null,
       child: Scaffold(
         backgroundColor: Colors.brown[50],
         appBar: AppBar(
-          title: Text("Brew Crew"),
+          title: Text("Coffee Crew"),
           backgroundColor: Colors.brown[400],
           elevation: 0.0,
           actions: [

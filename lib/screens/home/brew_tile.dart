@@ -2,7 +2,7 @@ import 'package:firebase_login_flutter/models/brew.dart';
 import 'package:flutter/material.dart';
 
 class BrewTile extends StatelessWidget {
-  final Brew? brew;
+  final Coffee? brew;
 
   BrewTile({this.brew});
 

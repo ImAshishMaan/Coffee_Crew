@@ -31,7 +31,7 @@ class _RegisterState extends State<Register> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: Text("SignUp in to brew crew"),
+              title: Text("SignUp in to Coffee crew"),
               actions: [
                 TextButton.icon(
                   icon: Icon(Icons.person),

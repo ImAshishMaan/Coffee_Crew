@@ -1,7 +1,7 @@
-class Brew {
+class Coffee {
   final String? name;
   final String? sugars;
   final int? strength;
 
-  Brew({this.name, this.sugars, this.strength});
+  Coffee({this.name, this.sugars, this.strength});
 }

@@ -32,7 +32,7 @@ class _SignInState extends State<SignIn> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: Text("Sign in to brew crew"),
+              title: Text("Sign in to Coffee crew"),
               actions: [
                 TextButton.icon(
                   icon: Icon(Icons.person),
